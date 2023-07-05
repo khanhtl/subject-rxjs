@@ -58,7 +58,7 @@ class Subject {
 
 }
 /**
- * @description Khi có một observer subcribe, observer sẽ nhận được giá trị emit tiếp theo của subject
+ * @description Khi có một observer subcribe, observer sẽ nhận được giá trị emit trước đó của subject
  * @author tlkhanh 05.07.2023
  */
 class BehaviorSubject<T> extends Subject{
