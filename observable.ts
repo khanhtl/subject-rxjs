@@ -105,19 +105,21 @@ class AsyncSubject extends Subject {
 // Demo
 
 // Subject
-// const subject$ = new Subject();
-// subject$.next(1);
-// subject$.subcribe((data) => {
-//     console.log(`Observer 1 receive `, data);
+const subject$ = new Subject();
+const observer1 = 
+subject$.next(1);
+let sub1 = subject$.subcribe((data) => {
+    console.log(`Observer 1 receive `, data);
     
-// });
-// subject$.subcribe((data) => {
-//     console.log(`Observer 2 receive `, data);
+});
+subject$.subcribe((data) => {
+    console.log(`Observer 2 receive `, data);
     
-// });
-// subject$.next(2);
-// subject$.next(3);
-// subject$.next(4);
+});
+subject$.next(2);
+subject$.next(3);
+sub1.unsubscribe();
+subject$.next(4);
 
 // Behavior Subject
 // const behaviorSubject$ = new BehaviorSubject(1);
