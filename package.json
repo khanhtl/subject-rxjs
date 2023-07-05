@@ -1,0 +1,17 @@
+{
+    "name": "9-observer-dp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "tsc observable.ts",
+        "res": "npm run compile && node observable.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.3.3",
+        "typescript": "^5.1.6"
+    }
+}
