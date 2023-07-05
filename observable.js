@@ -171,15 +171,15 @@ var AsyncSubject = /** @class */ (function (_super) {
 //     console.log(`Observer 2 receive `, data);
 // });
 // Async subject
-var asyncSubject$ = new AsyncSubject();
-asyncSubject$.next(1);
-asyncSubject$.next(2);
-asyncSubject$.subcribe(function (data) {
-    console.log("Observer 1 receive ", data);
-});
-asyncSubject$.next(3);
-asyncSubject$.subcribe(function (data) {
-    console.log("Observer 2 receive ", data);
-});
-asyncSubject$.complete();
-asyncSubject$.next(4);
+// const asyncSubject$ = new AsyncSubject();
+// asyncSubject$.next(1);
+// asyncSubject$.next(2);
+// asyncSubject$.subcribe((data) => {
+//     console.log(`Observer 1 receive `, data);
+// });
+// asyncSubject$.next(3);
+// asyncSubject$.subcribe((data) => {
+//     console.log(`Observer 2 receive `, data);
+// });
+// asyncSubject$.complete();
+// asyncSubject$.next(4);
